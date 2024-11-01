@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #ffc017;
+  color: #191919;
+}
+
+.nav-bar {
+  padding-inline: 15%;
+  padding-block: 2.3rem;
+  border-bottom: 3px solid;
+  border-color: #191919;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+svg {
+  height: 2.8rem;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #191919;
+  font-size: 1.7rem;
+}
+
+#Get-Started {
+  background-color: #191919;
+  color: white;
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  border-radius: 50px;
+}
+
+.first-action {
+  position: relative;
+  overflow: hidden;
+  padding-inline: 15%;
+  padding-block: 7%;
+  text-align: left;
+}
+
+.top-page {
+  max-width: 60%;
+}
+
+.top-page h1 {
+  font-family: "Spectral", serif;
+  font-weight: lighter;
+  font-size: 9.5rem;
+  color: #191919;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  letter-spacing: -10px;
+}
+
+.top-page h3 {
+  margin-top: 0;
+  margin-bottom: 8rem;
+  font-size: 2.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  max-width: 70%;
+}
+
+.top-page a {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  background-color: #191919;
+  color: white;
+  margin-top: 0;
+  padding-inline: 8%;
+  padding-block: 1.6%;
+  border-radius: 50px;
+}
+
+img {
+  position: absolute;
+  right: 0px;
+  height: 101%;
+  top: 5%;
+}
+
+.black-line {
+  height: 3px;
+  background-color: #191919;
+  z-index: 3;
+}
