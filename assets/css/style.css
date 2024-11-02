@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  margin-bottom: 5%;
 }
 
 header {
@@ -17,6 +18,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 80%;
+  background-color: #ffc017;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.nav-bar.scrolled {
+  background-color: white;
 }
 
 svg {
@@ -54,6 +64,7 @@ a {
 
 .top-page {
   max-width: 44%;
+  margin-block: 6%;
 }
 
 .top-page h1 {
@@ -90,12 +101,28 @@ a {
   border-radius: 50px;
 }
 
-#m-logo {
+#svg-container {
   position: absolute;
   right: 0px;
-  height: 98%;
-  top: 2%;
+  height: 107%;
+  top: 20%;
   right: -15px;
+}
+
+.fade {
+  animation: fadeInOut 2s infinite;
+  opacity: 0;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+  }
 }
 
 .black-line {
@@ -223,6 +250,10 @@ p.author {
 }
 
 #article2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   position: relative;
   padding-inline: 10%;
   font-family: "Roboto", sans-serif;
@@ -235,8 +266,9 @@ p.author {
 
 #functions {
   width: 26%;
-  position: absolute;
-  right: 10%;
+  position: sticky;
+  left: 100%;
+  top: 11%;
 }
 
 .filter {
@@ -277,13 +309,14 @@ p.author {
 
 .topic {
   display: flex;
+  justify-content: space-between;
 }
 
 .block {
   display: flex;
   flex-direction: column;
   font-size: 1.9rem;
-  width: 38%;
+  width: 60%;
 }
 
 .block h3 {
@@ -312,6 +345,10 @@ p.author {
   align-items: center;
   font-size: 24px;
   font-weight: bold;
+}
+
+.user p {
+  margin-left: 2%;
 }
 
 .user-pic {
@@ -345,4 +382,35 @@ p.author {
 
 .footer #img2 {
   margin-left: 36%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  max-width: 67%;
+}
+
+#foot-3 {
+  width: 130%;
+}
+
+#foot-3 > #img2 {
+  margin-left: 13%;
+}
+
+#foot-4 {
+  gap: 1.5rem;
+}
+
+.main-text > #foot-4 > div:nth-child(2)::after {
+  content: "•";
+}
+
+#foot-5 > #img2 {
+  margin-left: 34%;
+}
+
+#foot-6 > #img2 {
+  margin-left: 19%;
 }
